@@ -1,3 +1,9 @@
+# revision 18704
+# category Package
+# catalog-ctan /support/newcommand
+# catalog-date 2010-06-02 16:01:13 +0200
+# catalog-license lppl
+# catalog-version 2.0
 Name:		texlive-newcommand
 Version:	2.0
 Release:	1
@@ -26,6 +32,7 @@ script then generates macros to define the command.
 %doc %{_texmfdistdir}/doc/latex/newcommand/newcommand.py
 %doc %{_texmfdistdir}/doc/latex/newcommand/newcommand.tex
 %doc %{_texmfdistdir}/doc/latex/newcommand/spark.py
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -36,3 +43,5 @@ script then generates macros to define the command.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar doc %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
