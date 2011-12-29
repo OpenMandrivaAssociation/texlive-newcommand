@@ -16,8 +16,6 @@ Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/newcommand.doc.ta
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
-Conflicts:	texlive-texmf <= 20110705-3
-Conflicts:	texlive-doc <= 20110705-3
 
 %description
 Generating any other than the simple \newcommand-style
@@ -32,7 +30,6 @@ script then generates macros to define the command.
 %doc %{_texmfdistdir}/doc/latex/newcommand/newcommand.py
 %doc %{_texmfdistdir}/doc/latex/newcommand/newcommand.tex
 %doc %{_texmfdistdir}/doc/latex/newcommand/spark.py
-%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -43,5 +40,3 @@ script then generates macros to define the command.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar doc %{buildroot}%{_texmfdistdir}
-mkdir -p %{buildroot}%{_tlpkgobjdir}
-cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
