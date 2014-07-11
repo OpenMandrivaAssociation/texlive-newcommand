@@ -6,7 +6,7 @@
 # catalog-version 2.0
 Name:		texlive-newcommand
 Version:	2.0
-Release:	7
+Release:	8
 Summary:	Generate new LaTeX command definitions
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/support/newcommand
