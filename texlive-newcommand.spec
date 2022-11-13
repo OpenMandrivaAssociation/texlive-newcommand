@@ -1,18 +1,12 @@
-# revision 18704
-# category Package
-# catalog-ctan /support/newcommand
-# catalog-date 2010-06-02 16:01:13 +0200
-# catalog-license lppl
-# catalog-version 2.0
 Name:		texlive-newcommand
-Version:	2.0
-Release:	11
+Version:	18704
+Release:	1
 Summary:	Generate new LaTeX command definitions
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/support/newcommand
 License:	LPPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/newcommand.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/newcommand.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/newcommand.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/newcommand.doc.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -33,24 +27,10 @@ script then generates macros to define the command.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar doc %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 2.0-2
-+ Revision: 754271
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 2.0-1
-+ Revision: 719109
-- texlive-newcommand
-- texlive-newcommand
-- texlive-newcommand
-- texlive-newcommand
-
