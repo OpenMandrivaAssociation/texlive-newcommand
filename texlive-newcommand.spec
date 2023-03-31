@@ -1,6 +1,6 @@
 Name:		texlive-newcommand
 Version:	18704
-Release:	1
+Release:	2
 Summary:	Generate new LaTeX command definitions
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/support/newcommand
