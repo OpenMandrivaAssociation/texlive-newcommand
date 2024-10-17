@@ -3,7 +3,7 @@ Version:	18704
 Release:	2
 Summary:	Generate new LaTeX command definitions
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/support/newcommand
+URL:		https://www.ctan.org/tex-archive/support/newcommand
 License:	LPPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/newcommand.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/newcommand.doc.r%{version}.tar.xz
